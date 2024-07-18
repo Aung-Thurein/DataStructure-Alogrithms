@@ -1,0 +1,111 @@
+package com.turing.dsa.adt.Linkedlist.doublylinkedlist;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.Iterator;
+
+import org.junit.jupiter.api.Test;
+
+import com.turing.dsa.adt.Linkedlist.doublylinkedlist.DoublyLinkedList.DoublyLinkedListIterator;
+
+public class DoublyLinkedListTest {
+
+	
+	@Test
+	public void testInsertFirstEmpty() {
+		DoublyLinkedList list = new DoublyLinkedList();
+		DoublyNode node = new DoublyNode(10);
+		
+		list.insertFirst(node);
+		
+		assertEquals(false, list.isEmpty());
+		assertEquals(node, list.getFirst());
+		assertEquals(node, list.getLast());
+	}
+	
+	
+	@Test
+	public void testInsertFirtNonEmptyCase() {
+		
+		DoublyLinkedList list = new DoublyLinkedList();
+		
+		
+		DoublyNode first = new DoublyNode(10);
+		DoublyNode second = new DoublyNode(20);
+		
+		list.insertFirst(first);
+		list.insertFirst(second);
+		
+		Iterator <DoublyNode> iterator = list.iterator();
+
+		DoublyNode element1 = iterator.next();
+		assertEquals(second, element1);
+		
+		DoublyNode element2 = iterator.next();
+		assertEquals(first, element2);
+		
+		assertEquals(false, iterator.hasNext());
+		
+		assertTrue(list.getFirst() == element1);
+		assertTrue(list.getLast() == element2);
+
+		
+		assertTrue(element1.getNext() == element2);
+		assertTrue(element2.getPrevious() == element1);
+	}
+	
+	@Test
+	public void testInsertFirstNonEmptyThreeNode() {
+		DoublyLinkedList list = new DoublyLinkedList();
+		
+		DoublyNode first = new DoublyNode(10);
+		DoublyNode second = new DoublyNode(20);
+		DoublyNode third = new DoublyNode(30);
+		
+		list.insertFirst(first);
+		list.insertFirst(second);
+		list.insertFirst(third);
+	
+		// [third,second,first]
+		
+		
+		Iterator<DoublyNode> iterator = list.iterator();
+		DoublyNode element1 = iterator.next();
+		assertEquals(third, element1);
+		
+		DoublyNode element2 = iterator.next();
+		assertEquals(second, element2);
+	
+		DoublyNode element3 = iterator.next();
+		assertEquals(first, element3);
+		
+		assertTrue(element1.getNext() == element2);
+		assertTrue(element2.getNext() == element3);
+		
+		assertTrue(element3.getPrevious() == element2);
+		assertTrue(element2.getPrevious() == element1);
+		
+		assertEquals(false, iterator.hasNext());
+	}
+	
+	@Test
+	public void testReverseOrder() {
+		DoublyLinkedList list = new DoublyLinkedList();
+		
+		DoublyNode first = new DoublyNode(10);
+		DoublyNode second = new DoublyNode(20);
+		DoublyNode third =new DoublyNode(30);
+		
+		list.insertFirst(first);
+		list.insertFirst(second);
+		list.insertFirst(thrid);
+		
+		Iterator<DoublyNode> iterator = list.reverseItertor();
+		
+		assertEquals(first, iterator.next() );
+		assertEquals(second, iterator.next() );
+		assertEquals(third, iterator.next() );
+	}
+	
+}

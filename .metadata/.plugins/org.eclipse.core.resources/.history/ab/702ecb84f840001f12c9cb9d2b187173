@@ -1,0 +1,21 @@
+package com.turing.dsa.adt.Linkedlist.doublylinkedlist;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class DoublyLinkedListTest {
+
+	
+	@Test
+	public void testInsertFirstEmpty() {
+		DoublyLinkedList list = new DoublyLinkedList();
+		DoublyNode node = new DoublyNode(10);
+		
+		list.insertFirst(node);
+		
+		assertEquals(false, list.isEmpty());
+		assertEquals(node, list.getFirst());
+		assertEquals(node, list.getLast());
+	}
+}

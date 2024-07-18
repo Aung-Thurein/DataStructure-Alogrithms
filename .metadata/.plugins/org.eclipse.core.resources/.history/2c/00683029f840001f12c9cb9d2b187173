@@ -1,0 +1,26 @@
+package com.turing.dsa.adt.Linkedlist.doublylinkedlist;
+
+public class DoublyLinkedList {
+	
+	DoublyNode first;
+	DoublyNode last;
+	
+	public void insertFirst(DoublyNode node) {
+		if(isEmpty()) {
+			first = node;
+			last = node;
+		}
+	}
+	
+	public boolean isEmpty() {
+		return this.first == null;
+	}
+	
+	public DoublyNode getFirst() {
+		return this.first;
+	}
+	
+	public DoublyNode getLast() {
+		return this.last;
+	}
+}
