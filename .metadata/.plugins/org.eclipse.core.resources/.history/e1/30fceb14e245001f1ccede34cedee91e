@@ -1,7 +1,5 @@
 package com.turing.dsa.reursion.tree;
 
-import java.util.Stack;
-
 public class TreeTraversal {
 	
 	void preOrder(TreeNode root) 
@@ -21,26 +19,6 @@ public class TreeTraversal {
 		
 	}
 	
-	void preOrderIterative(TreeNode root)
-	{
-		Stack<TreeNode> stack = new Stack<TreeNode>();
-		
-		stack.push(root);
-		
-		while(! stack.isEmpty())
-		{
-			TreeNode node = stack.pop();
-			System.out.println(node.value);
-			
-			if(node.children.size() > 0)
-			{
-				for (int i = node.children.size() - 1; i >= 0; i--) {
-					stack.push(node.children.get(i));
-				}
-			}
-		}
-	}
-	
 	public static void main(String[] args) {
 		TreeNode nodeA = new TreeNode("A");
 		TreeNode nodeB = new TreeNode("B");
@@ -56,7 +34,6 @@ public class TreeTraversal {
 		
 		TreeTraversal traversal = new TreeTraversal();
 		traversal.preOrder(nodeA);
-		traversal.preOrderIterative(nodeA);
 		
 	}
 	

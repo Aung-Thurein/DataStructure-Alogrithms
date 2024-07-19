@@ -30,7 +30,7 @@ public class TreeTraversal {
 		while(! stack.isEmpty())
 		{
 			TreeNode node = stack.pop();
-			System.out.println(node.value);
+			System.out.println(node);
 			
 			if(node.children.size() > 0)
 			{
@@ -56,7 +56,6 @@ public class TreeTraversal {
 		
 		TreeTraversal traversal = new TreeTraversal();
 		traversal.preOrder(nodeA);
-		traversal.preOrderIterative(nodeA);
 		
 	}
 	
