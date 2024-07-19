@@ -1,3 +1,10 @@
 1721394149797	Delete element
 1721394290249	Rename method 'Factorial'
 1721394306228	Rename type 'Recursion'
+1721399501104	Copy compilation unit
+1721399510837	Delete element
+1721399521723	Rename type 'BinarySearch'
+1721400128690	Copy compilation unit
+1721400162284	Delete element
+1721400181401	Rename compilation unit 'BinarySearchTest.java'
+1721400248080	Rename type 'BinarySearchRecursive'

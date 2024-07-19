@@ -1,0 +1,33 @@
+package com.turing.dsa.reursion;
+
+public class BinarySearchRecursive extends Array implements Searchable{
+	
+	public BinarySearchRecursive (int []items) {
+		super(items);
+	}
+	@Override
+	public int finditem(int value) {
+		int first = 0;
+		int last = this.items.length -1;
+		
+		while (first <= last)
+		{
+			int middle = first+last / 2;
+			
+			if(this.items[middle] == value)
+			{
+				return middle;
+			}
+			else if (this.items[middle] < value)
+			{
+				first = middle + 1;
+			}
+			else 
+			{
+				last = middle - 1;
+			}
+		}
+		return -1;
+	}
+
+}
