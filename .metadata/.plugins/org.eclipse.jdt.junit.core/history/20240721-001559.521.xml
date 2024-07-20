@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MergeSortTest" project="DSA" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.turing.dsa.recursion.MergeSortTest" time="0.001" displayname="MergeSortTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.recursion.MergeSortTest]">
+    <testcase name="mergeSortBaseCase" classname="com.turing.dsa.recursion.MergeSortTest" time="0.001" displayname="mergeSortBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.recursion.MergeSortTest]/[method:mergeSortBaseCase()]"/>
+  </testsuite>
+</testrun>

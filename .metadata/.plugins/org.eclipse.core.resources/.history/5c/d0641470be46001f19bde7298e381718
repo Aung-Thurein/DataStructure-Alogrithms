@@ -1,0 +1,17 @@
+package com.turing.dsa.recursion;
+
+import org.junit.jupiter.api.Test;
+
+import com.turing.dsa.reursion.MergeSort;
+import com.turing.dsa.sorting.Sortable;
+
+public class MergeSortTest {
+	@Test
+	public void mereSortBaseCase()
+	{
+		Sortable mergeSort = new MergeSort();
+		int[] arr = {8,2};
+		mergeSort.sort(arr);
+		
+	}
+}

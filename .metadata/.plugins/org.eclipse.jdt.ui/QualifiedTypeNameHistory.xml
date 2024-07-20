@@ -19,10 +19,8 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.stack.PostFixTransformer"/>
-    <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="javax.print.attribute.HashAttributeSet"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.stack.Stack"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.ArrayBaseQueue"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.QueueTest"/>
@@ -46,6 +44,17 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Order"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.doublylinkedlist.DoublyLinkedList"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.doublylinkedlist.DoublyNode"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.recursion.FactorialTest"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.reursion.Factorial"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.reursion.tree.TreeTraversal"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.array.Array"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.array.BinarySearch"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.reursion.BinarySearchRecursive"/>
+    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.stack.Stack"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
 </qualifiedTypeNameHistroy>

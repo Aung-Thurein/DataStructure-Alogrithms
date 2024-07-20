@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MergeSortTest" project="DSA" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.turing.dsa.recursion.MergeSortTest" time="0.007" displayname="MergeSortTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.recursion.MergeSortTest]">
+    <testcase name="mereSortBaseCase" classname="com.turing.dsa.recursion.MergeSortTest" time="0.007" displayname="mereSortBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.recursion.MergeSortTest]/[method:mereSortBaseCase()]">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "snew", new expected
+
+	at com.turing.dsa.recursion.MergeSortTest.mereSortBaseCase(MergeSortTest.java:16)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
