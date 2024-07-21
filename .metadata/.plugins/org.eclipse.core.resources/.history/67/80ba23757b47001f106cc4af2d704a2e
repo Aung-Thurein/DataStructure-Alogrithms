@@ -19,20 +19,19 @@ public class QuickSortV1 implements Sortable{
 		{
 			int pivot = arr[endIndex];
 
+			int index = startIndex;
+
 			if(pivot ==1)
 			{
-				int temp = arr[startIndex];
-				arr[startIndex] = arr[endIndex];
-				arr[endIndex] = temp;
+				pivot = arr[endIndex-1]
 			}
-			pivot = arr[endIndex];
 			
 			
 			List<Integer> leftSide = new ArrayList<Integer>();
 			List<Integer> rightSide = new ArrayList<Integer>();
 
 			
-			for (int i = startIndex; i < endIndex; i++) {
+			for (int i = 0; i < endIndex; i++) {
 				if(arr[i] <= pivot)
 				{
 					leftSide.add(arr[i]);
@@ -45,8 +44,6 @@ public class QuickSortV1 implements Sortable{
 			}
 			
 			//copied Back
-			int index = startIndex;
-
 			for(Integer left : leftSide)
 			{
 				arr[index++] = left;
@@ -60,11 +57,7 @@ public class QuickSortV1 implements Sortable{
 			}
 			
 			quickSort(arr, startIndex, pivotIndex-1);
-			if(rightSide.size() > 0)
-			{
-				quickSort(arr, pivotIndex+1, endIndex);
-				
-			}
+			quickSort(arr, pivotIndex+1, endIndex);
 			
 			
 			
