@@ -23,7 +23,7 @@ public class QuickSortTest {
 	public void QuickSortBaseCaseAnotherWord()
 	{
 		Sortable algo = new QuickSortV1();
-		int arr [] = new int [] {8,3,1};
+		int arr [] = new int [] {8,3};
 		Util.print("Array", arr);
 		algo.sort(arr);
 		Util.print("Sorted", arr);
@@ -35,7 +35,7 @@ public class QuickSortTest {
 	public void QuickSortManyCase()
 	{
 		Sortable algo = new QuickSortV1();
-		int arr [] = new int [] {51,2,32,43,9,3,1};
+		int arr [] = new int [] {8,33,212,4,32,21};
 		Util.print("Array", arr);
 		algo.sort(arr);
 		Util.print("Sorted", arr);
