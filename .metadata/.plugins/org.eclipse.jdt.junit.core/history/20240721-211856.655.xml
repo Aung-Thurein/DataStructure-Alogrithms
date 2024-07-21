@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="QuickSortTest" project="DSA" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.turing.dsa.sorting.QuickSortTest" time="0.001" displayname="QuickSortTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.QuickSortTest]">
+    <testcase name="QuickSortBaseCase" classname="com.turing.dsa.sorting.QuickSortTest" time="0.001" displayname="QuickSortBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.QuickSortTest]/[method:QuickSortBaseCase()]">
+      <failure>
+        <expected>true</expected>
+        <actual>false</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.turing.dsa.sorting.QuickSortTest.QuickSortBaseCase(QuickSortTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

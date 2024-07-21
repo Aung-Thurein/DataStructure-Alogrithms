@@ -4,10 +4,8 @@
     <fullyQualifiedTypeName name="javax.imageio.metadata.IIOMetadataFormatImpl"/>
     <fullyQualifiedTypeName name="com.jdc.dsa.sorting.SelectionSort"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.sorting.Util"/>
     <fullyQualifiedTypeName name="java.lang.AssertionError"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
@@ -45,7 +43,6 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Order"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.doublylinkedlist.DoublyLinkedList"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.doublylinkedlist.DoublyNode"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="com.turing.dsa.recursion.FactorialTest"/>
     <fullyQualifiedTypeName name="com.turing.dsa.reursion.Factorial"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -57,4 +54,9 @@
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.stack.Stack"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.sorting.Sortable"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.reursion.MergeSort"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.sorting.Util"/>
 </qualifiedTypeNameHistroy>

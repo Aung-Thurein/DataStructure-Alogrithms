@@ -1,0 +1,41 @@
+package com.turing.dsa.sorting;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class QuickSort implements Sortable{
+
+	@Override
+	public void sort(int[] arr) {
+		quickSort(arr, 0, arr.length-1);
+	}
+	
+	public void  quickSort(int[]arr, int startIndex, int endIndex)
+	{
+		int size = endIndex - startIndex + 1;
+		
+		//divide
+		if(size > 3)
+		{
+			int pivot = arr[endIndex];
+			
+			List<Integer> lefSide = new ArrayList<Integer>();
+			List<Integer> rightSide = new ArrayList<Integer>();
+			
+			for (int i = 0; i < endIndex; i++) {
+				
+			}
+			
+		}
+		else if (size ==2)
+		{
+			if(arr[startIndex] > arr [endIndex])
+			{
+				int temp = arr[startIndex];
+				arr[startIndex] = arr[endIndex];
+				arr[endIndex] = temp;
+			}
+		}
+	}
+
+}

@@ -6,7 +6,6 @@ INDEX VERSION 1.134+/Users/aungthureintun/Documents/Devs/DSA/workspace/.metadata
 1454160808.index
 1865797976.index
 73339846.index
-1053506297.index
 2806824771.index
 2457741821.index
 1372432135.index
