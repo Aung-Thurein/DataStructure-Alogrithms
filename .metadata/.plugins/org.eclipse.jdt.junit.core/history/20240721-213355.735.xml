@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="QuickSortTest" project="DSA" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="com.turing.dsa.sorting.QuickSortTest" time="0.011" displayname="QuickSortTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.QuickSortTest]">
-    <testcase name="QuickSortManyCase" classname="com.turing.dsa.sorting.QuickSortTest" time="0.009" displayname="QuickSortManyCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.QuickSortTest]/[method:QuickSortManyCase()]"/>
-    <testcase name="QuickSortBaseCaseAnotherWord" classname="com.turing.dsa.sorting.QuickSortTest" time="0.0" displayname="QuickSortBaseCaseAnotherWord()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.QuickSortTest]/[method:QuickSortBaseCaseAnotherWord()]"/>
-    <testcase name="QuickSortBaseCase" classname="com.turing.dsa.sorting.QuickSortTest" time="0.001" displayname="QuickSortBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.QuickSortTest]/[method:QuickSortBaseCase()]"/>
-  </testsuite>
-</testrun>

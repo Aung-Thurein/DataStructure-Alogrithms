@@ -1,0 +1,25 @@
+package com.turing.dsa.sorting;
+
+public class RadixSort implements Sortable {
+
+	@Override
+	public void sort(int[] arr) {
+		
+	}
+	
+	public void	max(int [] arr)
+	{	
+		if(arr.length == 1)
+		{
+			int maxElement = arr[0];
+			
+		}
+		else
+		{
+			for (int i = 0; i < arr.length; i++) {
+				if()
+			}
+			
+		}
+	}
+}

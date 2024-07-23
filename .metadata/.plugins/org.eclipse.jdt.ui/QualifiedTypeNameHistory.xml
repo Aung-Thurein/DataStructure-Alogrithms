@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.io.TempDir"/>
-    <fullyQualifiedTypeName name="javax.imageio.metadata.IIOMetadataFormatImpl"/>
-    <fullyQualifiedTypeName name="com.jdc.dsa.sorting.SelectionSort"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.lang.AssertionError"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
@@ -45,8 +42,6 @@
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.doublylinkedlist.DoublyNode"/>
     <fullyQualifiedTypeName name="com.turing.dsa.recursion.FactorialTest"/>
     <fullyQualifiedTypeName name="com.turing.dsa.reursion.Factorial"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.turing.dsa.reursion.tree.TreeTraversal"/>
     <fullyQualifiedTypeName name="com.turing.dsa.array.Array"/>
     <fullyQualifiedTypeName name="com.turing.dsa.array.BinarySearch"/>
@@ -55,8 +50,14 @@
     <fullyQualifiedTypeName name="com.turing.dsa.adt.stack.Stack"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.sorting.Sortable"/>
     <fullyQualifiedTypeName name="com.turing.dsa.reursion.MergeSort"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.Util"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.sorting.QuickSort"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.sorting.Sortable"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.sorting.QuickSortInPlaceTest"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.sorting.QuickSortInPlace"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.sorting.QuickSortV1"/>
 </qualifiedTypeNameHistroy>

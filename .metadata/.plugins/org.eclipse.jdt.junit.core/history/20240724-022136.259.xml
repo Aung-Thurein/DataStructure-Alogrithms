@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RadixSortTest" project="DSA" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.turing.dsa.sorting.RadixSortTest" time="0.007" displayname="RadixSortTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.RadixSortTest]">
+    <testcase name="radixSortTest" classname="com.turing.dsa.sorting.RadixSortTest" time="0.007" displayname="radixSortTest()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.RadixSortTest]/[method:radixSortTest()]">
+      <error>java.lang.ArrayIndexOutOfBoundsException: Index 49 out of bounds for length 10
+	at com.turing.dsa.sorting.RadixSort.sort(RadixSort.java:23)
+	at com.turing.dsa.sorting.RadixSortTest.radixSortTest(RadixSortTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
