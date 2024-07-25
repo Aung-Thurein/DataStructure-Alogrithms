@@ -1,0 +1,15 @@
+package com.turing.dsa.sorting;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class ShellSortTest {
+	
+	@Test
+	public void testShellSort()
+	{
+		int a = 2 + 3;
+		assertEquals(5, a);
+	}
+}

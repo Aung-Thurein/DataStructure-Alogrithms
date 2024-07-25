@@ -1,0 +1,11 @@
+package com.turing.dsa.sorting;
+
+public class ShellSort implements Sortable {
+
+	@Override
+	public void sort(int[] arr) {
+		int n = arr.length;
+		int gap = (int)Math.floor(n / 2);
+	}
+
+}

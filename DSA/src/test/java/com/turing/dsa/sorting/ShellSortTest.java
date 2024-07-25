@@ -1,0 +1,20 @@
+package com.turing.dsa.sorting;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
+public class ShellSortTest {
+
+	Sortable algo = new ShellSort();
+	
+	@Test
+	public void testShellSort()
+	{
+		int arr[] = new int[] {3,8,11,2,10};
+		algo.sort(arr);
+		Util.print("Sorted Array", arr);
+		assertTrue(Util.isSorted(arr));
+		
+	}
+}

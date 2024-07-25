@@ -1,0 +1,34 @@
+package com.turing.dsa.sorting;
+
+public class ShellSort implements Sortable {
+
+	@Override
+	public void sort(int[] arr) {
+		
+		int n = arr.length;
+		int gap = n / 2;
+		
+		while(gap >= 1)
+		{
+			int temp;
+			for (int i = gap; i < n; i++) {
+				temp = arr[i];
+				int j = i;
+				for (; (j >= gap) && arr[j-gap] > temp; j-= gap) {
+					arr[j] = arr[j-gap];
+				}
+				arr[j] = temp;
+			}
+			
+			 gap = n / 2;
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		ShellSort algo = new ShellSort();
+		int arr[] = new int[] {3,8,11,2,10};
+		algo.sort(arr);
+	}
+
+}

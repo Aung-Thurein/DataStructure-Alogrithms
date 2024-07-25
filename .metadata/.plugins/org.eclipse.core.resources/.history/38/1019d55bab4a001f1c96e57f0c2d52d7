@@ -1,0 +1,9 @@
+package com.turing.dsa.sorting;
+
+public class ShellSortTest {
+
+	public void testShellSort()
+	{
+		Sortable algo = new ShellSort();
+	}
+}

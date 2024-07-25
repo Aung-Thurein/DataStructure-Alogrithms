@@ -1,0 +1,11 @@
+package com.turing.dsa.sorting;
+
+public class ShellSortTest {
+
+	public void testShellSort()
+	{
+		int arr[] = new int[] {12,32,3,21,1};
+		Sortable algo = new ShellSort();
+		algo.sort(arr);
+	}
+}

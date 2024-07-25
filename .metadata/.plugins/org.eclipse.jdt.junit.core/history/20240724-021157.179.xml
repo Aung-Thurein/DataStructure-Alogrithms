@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="RadixSortTest" project="DSA" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.turing.dsa.sorting.RadixSortTest" time="0.002" displayname="RadixSortTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.RadixSortTest]">
-    <testcase name="radixSortTest" classname="com.turing.dsa.sorting.RadixSortTest" time="0.002" displayname="radixSortTest()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.sorting.RadixSortTest]/[method:radixSortTest()]"/>
-  </testsuite>
-</testrun>
