@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BinaryTreeTest" project="DSA" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.011" displayname="BinaryTreeTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]">
+    <testcase name="testInsert" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.011" displayname="testInsert()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testInsert()]">
+      <failure>
+        <expected>com.turing.dsa.adt.BinaryTree.Tree@1442d7b5</expected>
+        <actual>true</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;com.turing.dsa.adt.BinaryTree.Tree@1442d7b5&gt; but was: &lt;true&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.turing.dsa.adt.BinaryTree.BinaryTreeTest.testInsert(BinaryTreeTest.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

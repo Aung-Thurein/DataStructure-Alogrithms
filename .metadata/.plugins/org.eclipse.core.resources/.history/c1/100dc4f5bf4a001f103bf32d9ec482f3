@@ -1,0 +1,11 @@
+package com.turing.dsa.adt.BinaryTree;
+
+public class Node {
+	int value;
+	Node Left;
+	Node Right;
+	public Node()
+	{
+		
+	}
+}

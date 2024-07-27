@@ -1,0 +1,11 @@
+package com.turing.dsa.adt.BinaryTree;
+
+import org.junit.jupiter.api.Test;
+
+public class BinaryTreeTest {
+	@Test
+	public void testInsert()
+	{
+		Tree tree = new Tree();
+	}
+}

@@ -1,0 +1,29 @@
+package com.turing.dsa.adt.BinaryTree;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Iterator;
+
+import org.junit.jupiter.api.Test;
+
+public class InOrderTest {
+
+	@Test
+	public void TestInOrder()
+	{
+		Node node10 = new Node(10);
+		Node node11 = new Node(11);
+		Node node12 = new Node(12);
+		
+		node10.setLeft(node11);
+		node10.setRight(node12);
+		Tree tree = new Tree(node10);
+
+		InOrderTraversal traversal = new InOrderTraversal(tree);
+		Iterator<Node> iterator = traversal.iterator();
+		
+		assertEquals(10, iterator.next());
+		assertEquals(11, iterator.next());
+		assertEquals(12, iterator.next());
+	}
+}

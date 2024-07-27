@@ -1,0 +1,11 @@
+package com.turing.dsa.adt.BinaryTree;
+
+public class PreOrderIterative {
+	
+	private Tree tree;
+	public PreOrderIterative(Tree tree)
+	{
+		this.tree = tree;
+	}
+	
+}

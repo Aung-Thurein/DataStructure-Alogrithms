@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.StackOverflowException"/>
-    <fullyQualifiedTypeName name="StackUnderflowException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.StackUnderflowException"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
@@ -18,7 +14,6 @@
     <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.CircularQueue"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.PriorityQueue"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.Node"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.LinkedListImpl.LinkedListIterator"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.LinkedList"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.StackWithLinkedList"/>
@@ -26,7 +21,6 @@
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.LinkedListImpl"/>
     <fullyQualifiedTypeName name="javax.management.QueryEval"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.QueueWithLinkedList"/>
-    <fullyQualifiedTypeName name="java.lang.Iterable"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.doublylinkedlist.DoublyLinkedList.DoublyLinkedListIterator"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.doublylinkedlist.DoublyLinkedList.DoublyLinkedListReverseIterator"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.TestMethodOrder"/>
@@ -51,13 +45,19 @@
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.QuickSortInPlace"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.QuickSortV1"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.RadixSort"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.Utils"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.ShellSort"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.Sortable"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.Util"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Tree"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.junit.platform.commons.annotation.Testable"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.InOrderTraversal"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Node"/>
 </qualifiedTypeNameHistroy>
