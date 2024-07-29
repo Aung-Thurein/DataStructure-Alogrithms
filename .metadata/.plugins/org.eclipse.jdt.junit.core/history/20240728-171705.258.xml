@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BinaryTreeTest" project="DSA" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.009" displayname="BinaryTreeTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]">
+    <testcase name="testDeleteRightOnlyChild" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.006" displayname="testDeleteRightOnlyChild()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testDeleteRightOnlyChild()]"/>
+    <testcase name="testDeleteLeftOnlyChild" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.0" displayname="testDeleteLeftOnlyChild()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testDeleteLeftOnlyChild()]"/>
+    <testcase name="testDelete" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.001" displayname="testDelete()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testDelete()]"/>
+    <testcase name="testInsert" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.001" displayname="testInsert()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testInsert()]"/>
+    <testcase name="testSearch" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.0" displayname="testSearch()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testSearch()]"/>
+  </testsuite>
+</testrun>

@@ -15,6 +15,7 @@ public class InOrderTraversal implements Iterable<Node> {
 	}
 	
 	class TreeIterator implements Iterator<Node>{
+	
 		Node current;
 		int index = 0;
 		ArrayList<Node> item;
