@@ -1,0 +1,21 @@
+package com.turing.dsa.adt.HashTable;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
+public class HashTableTest {
+
+	@Test
+	void test()
+	{
+		HashTable hash = new HashTable();
+		hash.insert(100);
+		hash.insert(100);
+		
+		assertEquals(true,hash.isItemExist(100));
+        assertEquals(true,hash.isItemExist(100));
+
+	}
+}

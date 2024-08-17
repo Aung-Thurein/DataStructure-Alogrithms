@@ -17,4 +17,5 @@ public class ShellSortTest {
 		assertTrue(Util.isSorted(arr));
 		
 	}
+	
 }

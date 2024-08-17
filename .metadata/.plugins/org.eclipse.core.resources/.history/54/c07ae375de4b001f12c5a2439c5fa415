@@ -1,6 +1,0 @@
-package com.turing.dsa.adt.BinaryTree;
-
-public class PreOrderIterativeTest {
-	
-	Node node10 = new Node(10);
-}

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.lang.Character"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.stack.PostFixTransformer"/>
     <fullyQualifiedTypeName name="javax.print.attribute.HashAttributeSet"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.ArrayBaseQueue"/>
@@ -47,17 +44,20 @@
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.ShellSort"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.Sortable"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.Util"/>
-    <fullyQualifiedTypeName name="java.lang.Iterable"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.junit.platform.commons.annotation.Testable"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Tree"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.stack.Stack"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Node"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.PreOrderIterative"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.BinaryTreeUtils"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.BinaryTreeUtils"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.InOrderTraversal"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Node"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.PostOrderTraversal"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Tree"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.PostOrderTraversal.PostOrderIterator"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.HashTable.LinkedList.LinkedListImpl"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 </qualifiedTypeNameHistroy>

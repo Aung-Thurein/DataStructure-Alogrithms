@@ -1,0 +1,10 @@
+package com.turing.dsa.adt.HashTable;
+
+import java.util.ArrayList;
+
+public class Comparsion {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+	}
+}

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BinaryTreeTest" project="DSA" tests="3" started="3" failures="0" errors="0" ignored="2">
-  <testsuite name="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.007" displayname="BinaryTreeTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]">
-    <testcase name="testDelete" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.005" displayname="testDelete()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testDelete()]"/>
-    <testcase name="testInsert" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.0" ignored="true" displayname="testInsert()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testInsert()]"/>
-    <testcase name="testSearch" classname="com.turing.dsa.adt.BinaryTree.BinaryTreeTest" time="0.0" ignored="true" displayname="testSearch()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.BinaryTree.BinaryTreeTest]/[method:testSearch()]"/>
-  </testsuite>
-</testrun>
