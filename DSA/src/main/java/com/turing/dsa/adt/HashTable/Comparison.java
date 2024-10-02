@@ -3,7 +3,7 @@ package com.turing.dsa.adt.HashTable;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Comparsion {
+public class Comparison {
 
 	public static void main(String[] args) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
