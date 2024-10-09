@@ -80,22 +80,36 @@ public class Node<T extends Number> {
 		}
 
 	public Node<T> splitNodeWithParent(Node<T> node) {
-		Node<T> parent = node.getParent();
-		Number middle = node.key[1];
-		int parentInsertPos = parent.insertKey((T)middle);
-		parent.children.remove(parentInsertPos);
 		
-		Node<T> childOne = new Node<T>();
-		childOne.insertKey((T)node.key[0]);
-		childOne.setParent(parent);
+		if(parent.isFourNode())
+		{
+			Node<T> recuParent = parent.split(parent);
+			
+			return recuParent;
+			
+		}
+		else
+		{
+			
+			Node<T> parent = node.getParent();
+			Number middle = node.key[1];
+			int parentInsertPos = parent.insertKey((T)middle);
+			parent.children.remove(parentInsertPos);
+			
+			Node<T> childOne = new Node<T>();
+			childOne.insertKey((T)node.key[0]);
+			childOne.setParent(parent);
 
-		Node<T> childTwo = new Node<T>();
-		childTwo.insertKey((T)node.key[2]);
-		childTwo.setParent(parent);
+			Node<T> childTwo = new Node<T>();
+			childTwo.insertKey((T)node.key[2]);
+			childTwo.setParent(parent);
+			
+			parent.getChildren().add(parentInsertPos,childTwo);
+			parent.getChildren().add(parentInsertPos,childOne);
+			
+			return parent;
 		
-		parent.getChildren().add(parentInsertPos,childTwo);
-		parent.getChildren().add(parentInsertPos,childOne);
-		return parent;
+		}
 	
 	}
 		
@@ -131,6 +145,10 @@ public class Node<T extends Number> {
 	public boolean isFourNode()
 	{
 		return getN_Node() == 4;	
+	}
+	public boolean isThreeNode()
+	{
+		return getN_Node() == 3;	
 	}
 	
 	public boolean isLeaf()

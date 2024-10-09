@@ -241,5 +241,77 @@ public class TestNode {
 		
 
 	}
+	
+	@Test
+	public void testSplitWithOneLevel()
+	{
+Node<Integer> parent = this.createParentWithTwoChild();
+		
+		ArrayList<Node<Integer>> children = parent.getChildren();
+		Node<Integer> childOne = children.get(0);
+		Node<Integer> childTwo = children.get(1);
+		
+		childTwo.insertKey(301);
+		childTwo.insertKey(302);
+		
+		Node<Integer> resultParent = childTwo.split(childTwo);
+		
+		ArrayList<Node<Integer>> children2 = resultParent.getChildren();
+		
+//	
+		assertEquals(3, children2.size());
+		
+		Node<Integer> c1 = children2.get(0);
+		Node<Integer> c2 = children2.get(1);
+		Node<Integer> c3 = children2.get(2);
+		
+	
+		c3.insertKey(303);
+		c3.insertKey(304);
+		
+		Node<Integer> root = c3.split(c3);
+		
+		assertEquals(200, root.key[0]);
+		assertEquals(301, root.key[1]);
+		assertEquals(303, root.key[2]);
+		assertEquals(4, root.getN_Node());
+		
+		ArrayList<Node<Integer>> level1Child = root.getChildren();
+		Node<Integer> l1c1 = level1Child.get(0);
+		Node<Integer> l1c2 = level1Child.get(1);
+		Node<Integer> l1c3 = level1Child.get(2);
+		Node<Integer> l1c4 = level1Child.get(3);
+		
+		assertEquals(150, l1c1.key[0]);
+		assertEquals(300, l1c2.key[0]);
+		assertEquals(302, l1c3.key[0]);
+		assertEquals(304, l1c4.key[0]);
+		
+		/*
+		  	[200,301]
+		 [150] [300] [302]
+		 
+		  	[200,301][303]
+		 [150] [300][302] [304]
+		 */
+		
+	//--->	//TWO LEVEL
+		
+		
+		l1c4.insertKey(305);
+		l1c4.insertKey(306);
+
+		
+		Node<Integer> finalRoot = l1c4.split(l1c4);
+		
+		ArrayList<Node<Integer>> finalRootLevelChildren = finalRoot.getChildren();
+		Node<Integer> fl1Cl = finalRootLevelChildren.get(0);
+		Node<Integer> fl1C2 = finalRootLevelChildren.get(1);
+		
+		
+		assertEquals(200, fl1Cl.key[0]);
+		assertEquals(303, fl1C2.key[0]);
+		
+	}
 
 }
