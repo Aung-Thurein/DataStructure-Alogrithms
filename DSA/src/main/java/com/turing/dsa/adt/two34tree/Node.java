@@ -9,17 +9,34 @@ public class Node<T extends Number> {
 	public ArrayList<Node<T>> children;
 	
 	static int ORDER = 4;
-	int noOfNode;
 	
-	public Node(int noOfNode)
+	int noOfNode = 1;
+	
+	public Node()
 	{
 		this.noOfNode = noOfNode;
 		this.key =(T[]) new Number[ORDER - 1];
 		this.children = new ArrayList<>();
 	}
 	
-	public void insertKey(T value)
+	Node<T> getParent()
 	{
+		return this.parent;
+	}
+	
+	public void setParent(Node<T> parent)
+	{
+		this.parent = parent;
+	}
+	
+	public ArrayList<Node<T>> getChildren()
+	{
+		return this.children;
+	}
+	
+	public int insertKey(T value)
+	{
+		this.noOfNode ++;
 		int posToInsert = 0;
 	
 		for (int i = 0; i < this.key.length; i++) {
@@ -35,11 +52,77 @@ public class Node<T extends Number> {
 			key[i] = key[i-1];
 		}
 		key[posToInsert] = value;
-		
-		
+	
+		return posToInsert;
 		
 	}
 	
+	public Node<T> split(Node<T> node)
+	{
+		if(!node.isFourNode())
+		{
+			return node;
+		}
+		else
+			{
+				if(node.getParent() == null)
+				{
+					//Split 4node --> (3key)
+					//no parent
+					return this.SplitWhenNoParent(node);
+				}
+				else
+				{
+					return splitNodeWithParent(node);
+				}
+			}
+			
+		}
+
+	public Node<T> splitNodeWithParent(Node<T> node) {
+		Node<T> parent = node.getParent();
+		Number middle = node.key[1];
+		int parentInsertPos = parent.insertKey((T)middle);
+		parent.children.remove(parentInsertPos);
+		
+		Node<T> childOne = new Node<T>();
+		childOne.insertKey((T)node.key[0]);
+		childOne.setParent(parent);
+
+		Node<T> childTwo = new Node<T>();
+		childTwo.insertKey((T)node.key[2]);
+		childTwo.setParent(parent);
+		
+		parent.getChildren().add(parentInsertPos,childTwo);
+		parent.getChildren().add(parentInsertPos,childOne);
+		return parent;
+	
+	}
+		
+		
+	
+	Node<T> SplitWhenNoParent(Node<T> node)
+	{
+		
+			T middle = (T) node.key[1];
+			Node<T> parent = new Node<T>();
+			parent.insertKey(middle);
+			
+			Node<T> childOne = new Node<T>();
+			childOne.insertKey((T)node.key[0]);
+			childOne.setParent(parent);
+		
+			Node<T> childTwo = new Node<T>();
+			childTwo.insertKey((T)node.key[2]);
+			childTwo.setParent(parent);
+			
+			parent.children.add(childOne);
+			parent.children.add(childTwo);
+			node = null;
+			return parent;
+		
+		
+	}
 	public int getN_Node()
 	{
 		return this.noOfNode;
