@@ -292,7 +292,7 @@ Node<Integer> parent = this.createParentWithTwoChild();
 		 [150] [300] [302]
 		 
 		  	[200,301][303]
-		 [150] [300][302] [304]
+		 [150] [300][302] [304,305,306]
 		 */
 		
 	//--->	//TWO LEVEL
@@ -311,6 +311,14 @@ Node<Integer> parent = this.createParentWithTwoChild();
 		
 		assertEquals(200, fl1Cl.key[0]);
 		assertEquals(303, fl1C2.key[0]);
+		
+		
+		ArrayList<Node<Integer>> level3ChildRightMost = fl1C2.getChildren();
+		Node<Integer> rightMostNode = level3ChildRightMost.get(1);
+		
+		assertEquals(304, rightMostNode.key[0]);
+		assertEquals(305, rightMostNode.key[1]);
+		assertEquals(306, rightMostNode.key[2]);
 		
 	}
 

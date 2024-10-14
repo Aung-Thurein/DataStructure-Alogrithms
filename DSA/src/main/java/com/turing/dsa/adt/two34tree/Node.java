@@ -83,9 +83,13 @@ public class Node<T extends Number> {
 		
 		if(parent.isFourNode())
 		{
-			Node<T> recuParent = parent.split(parent);
+			while(parent.isFourNode())
+			{
+				 parent = parent.split(parent);
+				
+			}
 			
-			return recuParent;
+			return parent;
 			
 		}
 		else
@@ -106,6 +110,11 @@ public class Node<T extends Number> {
 			
 			parent.getChildren().add(parentInsertPos,childTwo);
 			parent.getChildren().add(parentInsertPos,childOne);
+
+			if(!node.isLeaf())
+			{
+				splitChild(node, childOne, childTwo);
+			}
 			
 			return parent;
 		
@@ -132,10 +141,28 @@ public class Node<T extends Number> {
 			
 			parent.children.add(childOne);
 			parent.children.add(childTwo);
-			node = null;
-			return parent;
+		 
+			if(!node.isLeaf())
+			{
+				splitChild(node, childOne, childTwo);
+			}
+			
+			node = null;		
+			return parent; 
 		
 		
+		
+	}
+
+	public void splitChild(Node<T> node, Node<T> childOne, Node<T> childTwo) {
+		ArrayList<Node<T>> children = node.getChildren();
+		childOne.children.add(children.get(0));
+		childOne.children.add(children.get(1));
+		
+		childTwo.children.add(children.get(2));
+		childTwo.children.add(children.get(3));
+		
+		node = null;
 	}
 	public int getN_Node()
 	{

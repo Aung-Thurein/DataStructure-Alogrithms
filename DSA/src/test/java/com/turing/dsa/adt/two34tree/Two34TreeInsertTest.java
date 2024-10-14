@@ -23,4 +23,97 @@ public class Two34TreeInsertTest {
 		
 	}
 	
+	@Test
+	public void testBaseCaseSearch()
+	{
+		TwoThreeFourTree<Integer> tree = new TwoThreeFourTree<Integer>();
+		tree.insert(10);
+		tree.insert(5);
+		tree.insert(100);
+		
+		assertEquals(5, tree.search(5));
+		assertEquals(10, tree.search(10));
+		assertEquals(100, tree.search(100));
+		assertEquals(null, tree.search(15));
+	}
+	
+	@Test
+	public void testLevel()
+	{ /*
+		[103]
+	[100]   [108,112] */			
+		Node<Integer> root = new Node<Integer>();
+		root.insertKey(103);
+		
+		Node<Integer> left = new Node<Integer>();
+		left.insertKey(100);
+		
+		Node<Integer> right = new Node<Integer>();
+		right.insertKey(108);
+		right.insertKey(112);
+		
+		root.getChildren().add(left);
+		root.getChildren().add(right);
+		
+		TwoThreeFourTree<Integer> tree =  new TwoThreeFourTree<Integer>(root);
+		assertEquals(103, tree.search(103));
+		assertEquals(100, tree.search(100));
+		assertEquals(108, tree.search(108));
+		assertEquals(112, tree.search(112));
+		assertEquals(null, tree.search(107));
+		assertEquals(null, tree.search(115));
+	}
+	
+	@Test
+	public void testLevel3()
+	{
+		 /*
+        [112]
+[103]         [120,150]
+[100][108]       [115][130] [160,170]
+*/
+		Node<Integer> root= new Node<Integer>();
+		root.insertKey(112);
+		
+		Node<Integer> left= new Node<Integer>(); 
+		left.insertKey(103);
+		
+		Node<Integer> right = new Node<Integer>(); 
+		right.insertKey(120);
+		right.insertKey(150);
+		
+		root.getChildren().add(left);
+		root.getChildren().add(right);
+		
+		Node<Integer> leftC1= new Node<Integer>(); 
+		leftC1.insertKey(100);
+		
+		Node<Integer> leftC2= new Node<Integer>();
+		leftC2.insertKey(108);
+		
+		left.children.add(leftC1);
+		left.children.add(leftC2);
+		
+		Node<Integer> rightC1= new Node<Integer>(); 
+		rightC1.insertKey(115);
+		right.children.add(rightC1);
+		
+		Node<Integer> rightC2= new Node<Integer>(); 
+		rightC2.insertKey(130);
+		right.children.add(rightC2);
+		
+		Node<Integer> rightC3= new Node<Integer>(); 
+		rightC3.insertKey(160);
+		rightC3.insertKey(170);
+		right.children.add(rightC3);
+		
+		TwoThreeFourTree<Integer> tree = new TwoThreeFourTree<>(root);
+		assertEquals(170,tree.search(170));
+		assertEquals(160,tree.search(160));
+		
+		assertEquals(null,tree.search(165));
+		assertEquals(null,tree.search(145));
+		assertEquals(null,tree.search(110));
+	}
+	
 }
