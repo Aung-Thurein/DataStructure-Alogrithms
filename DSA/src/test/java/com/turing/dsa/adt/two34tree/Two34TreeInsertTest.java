@@ -116,4 +116,73 @@ public class Two34TreeInsertTest {
 		assertEquals(null,tree.search(110));
 	}
 	
+	
+	@Test
+	public void testSearchToInsertBaseCase()
+	{
+		Node<Integer> root = new Node<Integer>();
+		root.insertKey(103);
+		root.insertKey(102);
+		root.insertKey(105);
+		
+		TwoThreeFourTree<Integer> tree = new TwoThreeFourTree<Integer>(root);
+		Node<Integer> nodeToInsert = tree.searchLeafToInsert(109);
+		
+		assertEquals(root, nodeToInsert);
+	}
+	
+	@Test
+	public void testSearchToInsertComplexCase()
+	{
+		 /*
+        [112]
+[103]         [120,150]
+[100][108]       [115][130] [160,170]
+*/
+		Node<Integer> root= new Node<Integer>();
+		root.insertKey(112);
+		
+		Node<Integer> left= new Node<Integer>(); 
+		left.insertKey(103);
+		
+		Node<Integer> right = new Node<Integer>(); 
+		right.insertKey(120);
+		right.insertKey(150);
+		
+		root.getChildren().add(left);
+		root.getChildren().add(right);
+		
+		Node<Integer> leftC1= new Node<Integer>(); 
+		leftC1.insertKey(100);
+		
+		Node<Integer> leftC2= new Node<Integer>();
+		leftC2.insertKey(108);
+		
+		left.children.add(leftC1);
+		left.children.add(leftC2);
+		
+		Node<Integer> rightC1= new Node<Integer>(); 
+		rightC1.insertKey(115);
+		right.children.add(rightC1);
+		
+		Node<Integer> rightC2= new Node<Integer>(); 
+		rightC2.insertKey(130);
+		right.children.add(rightC2);
+		
+		Node<Integer> rightC3= new Node<Integer>(); 
+		rightC3.insertKey(160);
+		rightC3.insertKey(170);
+		right.children.add(rightC3);
+		
+		TwoThreeFourTree<Integer> tree = new TwoThreeFourTree<>(root);
+		Node<Integer> node171 = tree.searchLeafToInsert(171);
+		
+		assertEquals(rightC3, node171);
+		assertEquals(true, node171.isLeaf());
+	
+		Node<Integer> node125 = tree.searchLeafToInsert(125);
+		assertEquals(rightC2, node125);
+
+	}
+	
 }

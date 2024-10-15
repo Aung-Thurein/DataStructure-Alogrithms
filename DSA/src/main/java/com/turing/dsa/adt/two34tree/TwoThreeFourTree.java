@@ -21,23 +21,86 @@ public class TwoThreeFourTree<T extends Number> {
 	{
 		return root;
 	}
-	void insert(T value)
+	
+	public Node<T> insert(T value)
 	{
-		if (root == null)
-		{
-			Node<T> node = new Node<T>();
-			node.insertKey(value);
-			this.root = node;
-		}
-		else
-		{
-			Node current = this.root;
-			
-			if(current.isLeaf() && !current.isFourNode())
-			{
-				current.insertKey(value);
-			}
-		}
+	    if(root == null)
+        {
+            root = new Node<T>();
+            root.insertKey(value);
+            return root;
+        }
+        else
+        {
+            Node<T> current = this.root;
+            while(current != null)
+            {
+            	if(current.isFourNode())
+            	{
+            		current = current.split(current);
+            	
+            		if(current.getParent() == null) //root
+            		{
+            			this.root = current;
+            		}
+            	}
+                Number[]keys = current.key;
+                int keyIndex =0;
+                for (int i = 0; i < keys.length; i++) {
+                    
+                    if(keys[i] ==null)
+                    {
+                        keyIndex = i-1;
+                        break;
+                    }
+                    else if( keys[i].doubleValue()> value.doubleValue())
+                    {
+                        keyIndex = i;
+                        break;
+                    }
+                    else if(keys[i] !=null && keys[i].doubleValue()== value.doubleValue())
+                    {
+                        System.out.println("Found at index "+i + " current "+current);
+                        current.insertKey(value);
+                        return current;
+                    }
+                }
+               
+                if(!current.isLeaf())
+                {
+                    System.out.println("Here "+value +" KeyIndex "+keyIndex);
+                 
+                    Number nodeValue= keys[keyIndex];
+                   
+                    ArrayList<Node<T>> children = current.getChildren();
+                   
+                    if(nodeValue.doubleValue()>value.doubleValue())
+                    {
+                        current = children.get(keyIndex);
+                        System.out.println("Search deep less than case "+current);
+                    }
+                    else
+                    {
+                        current = children.get(keyIndex+1);
+                        System.out.println("Search deep greater than case"+current);
+                    }
+                    
+                }
+                else
+                {
+                	current.insertKey(value);
+                	return current;
+                }
+            }
+            if(current != null)
+            {
+            	current.insertKey(value);
+            }
+            return current;
+        }
+        
+     
+    
 	}
 	
 	public T search(Number value)
@@ -105,7 +168,8 @@ public class TwoThreeFourTree<T extends Number> {
 	
 	 public Node<T> searchLeafToInsert(Number value)
 	    {
-	        if(root == null)
+	 
+		 if(root == null)
 	        {
 	            root = new Node<T>();
 	            return root;
@@ -160,5 +224,7 @@ public class TwoThreeFourTree<T extends Number> {
 	            }
 	            return current;
 	        }
-}
+	        
+	     
+	    }
 }
