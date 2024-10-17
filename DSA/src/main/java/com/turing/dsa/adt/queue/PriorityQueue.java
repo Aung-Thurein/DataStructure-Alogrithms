@@ -23,10 +23,15 @@ public class PriorityQueue extends CircularQueue{
 			int comparsion = 0;
 			
 			while(comparsion < (this.noOfItems - 1)  && this.items[index] > this.items[this.getIndexLowerIndes(index)]) {
+				
 				int temp = this.items[index];
+				
 				this.items[index] = this.items[this.getIndexLowerIndes(index)];
+				
 				this.items[this.getIndexLowerIndes(index)] = temp;
+				
 				comparsion ++;
+				
 				index = this.getIndexLowerIndes(index);
 				
 			}
