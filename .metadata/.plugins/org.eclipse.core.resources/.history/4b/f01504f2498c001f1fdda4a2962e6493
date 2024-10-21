@@ -1,0 +1,12 @@
+package com.turing.dsa.adt.heap;
+
+public class PriorityQueueWithHeap {
+
+	Heap heap;
+	
+	public PriorityQueueWithHeap()
+	{
+		Integer[] empty = {};
+		heap = new Heap(empty):
+	}
+}

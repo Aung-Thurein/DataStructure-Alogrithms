@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.print.attribute.HashAttributeSet"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.ArrayBaseQueue"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.QueueTest"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.Interface2"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.CircularQueue"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.queue.PriorityQueue"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.Node"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.LinkedListImpl.LinkedListIterator"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.Linkedlist.LinkedList"/>
@@ -26,7 +18,6 @@
     <fullyQualifiedTypeName name="com.turing.dsa.recursion.FactorialTest"/>
     <fullyQualifiedTypeName name="com.turing.dsa.reursion.Factorial"/>
     <fullyQualifiedTypeName name="com.turing.dsa.reursion.tree.TreeTraversal"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.array.Array"/>
     <fullyQualifiedTypeName name="com.turing.dsa.array.BinarySearch"/>
     <fullyQualifiedTypeName name="com.turing.dsa.reursion.BinarySearchRecursive"/>
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
@@ -42,7 +33,6 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.Utils"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.ShellSort"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.sorting.Sortable"/>
     <fullyQualifiedTypeName name="com.turing.dsa.sorting.Util"/>
     <fullyQualifiedTypeName name="org.junit.platform.commons.annotation.Testable"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.stack.Stack"/>
@@ -51,13 +41,23 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.BinaryTreeUtils"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.InOrderTraversal"/>
-    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Node"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.PostOrderTraversal"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Tree"/>
     <fullyQualifiedTypeName name="java.lang.Iterable"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.PostOrderTraversal.PostOrderIterator"/>
     <fullyQualifiedTypeName name="com.turing.dsa.adt.HashTable.LinkedList.LinkedListImpl"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.two34tree.TwoThreeFourTree"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.array.Array"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.two34tree.Node"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.BinaryTree.Node"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.heap.CompleteBinaryTree"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.heap.Heap"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.heap.PriorityQueueWithHeap"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.sorting.Sortable"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.heap.HeapSort"/>
+    <fullyQualifiedTypeName name="com.turing.dsa.adt.graph.Vertex"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

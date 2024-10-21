@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GraphTest" project="DSA" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.turing.dsa.adt.Graph.GraphTest" time="0.002" displayname="GraphTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]">
+    <testcase name="testBaseCase" classname="com.turing.dsa.adt.Graph.GraphTest" time="0.0" displayname="testBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]/[method:testBaseCase()]"/>
+    <testcase name="testDFSComplexCase" classname="com.turing.dsa.adt.Graph.GraphTest" time="0.001" displayname="testDFSComplexCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]/[method:testDFSComplexCase()]"/>
+    <testcase name="testDfsIterative" classname="com.turing.dsa.adt.Graph.GraphTest" time="0.0" displayname="testDfsIterative()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]/[method:testDfsIterative()]"/>
+    <testcase name="testDFSBaseCase" classname="com.turing.dsa.adt.Graph.GraphTest" time="0.0" displayname="testDFSBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]/[method:testDFSBaseCase()]"/>
+  </testsuite>
+</testrun>

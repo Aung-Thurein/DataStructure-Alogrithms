@@ -1,0 +1,72 @@
+package com.turing.dsa.adt.Graph;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+
+import com.turing.dsa.adt.graph.Graph;
+
+public class GraphTest {
+
+	@Test
+	public void testBaseCase()
+	{
+		Graph graph = new Graph();
+		
+	    //A   -> B
+        //B->C
+        //C->D    
+		graph.addVertex("A");
+		graph.addVertex("B");
+		graph.addVertex("C");
+		graph.addVertex("D");
+		graph.addVertex("E");
+		
+		graph.createAdjacencyMatrix();
+		
+		graph.addEdge("A", "B");
+		graph.addEdge("A", "C");
+		graph.addEdge("A", "D");
+		graph.addEdge("B", "C");
+		
+		ArrayList<String> vertices = graph.getUnvisitedReachableVertices("A");
+		assertEquals(3, vertices.size());
+		assertTrue(vertices.contains("B"));
+		assertTrue(vertices.contains("C"));
+		assertTrue(vertices.contains("D"));
+		
+		
+	}
+	
+	@Test
+	public void testDFSBaseCase()
+	{
+		Graph graph = new Graph();
+		
+	    //A   -> B
+        //		-> C
+		//		->D
+        //B  -> C   
+		graph.addVertex("A");
+		graph.addVertex("B");
+		graph.addVertex("C");
+		graph.addVertex("D");
+		graph.addVertex("E");
+		
+		graph.createAdjacencyMatrix();
+		
+		graph.addEdge("A", "B");
+		graph.addEdge("A", "C");
+		graph.addEdge("A", "D");
+		graph.addEdge("B", "C");
+		
+		ArrayList<String> result = graph.getUnvisitedReachableVertices("A");
+		assertEquals(34, result.size());
+		assertEquals(, );
+		
+		
+	}
+}

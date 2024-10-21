@@ -1,0 +1,14 @@
+package com.turing.dsa.adt.Graph;
+
+import org.junit.jupiter.api.Test;
+
+import com.turing.dsa.adt.graph.Graph;
+
+public class GraphTest {
+
+	@Test
+	public void testDFSBaseCase()
+	{
+		Graph graph = new Graph();
+	}
+}

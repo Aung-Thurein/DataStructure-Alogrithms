@@ -1,0 +1,37 @@
+package com.turing.dsa.adt.graph;
+
+import java.util.ArrayList;
+
+public class Graph {
+
+	ArrayList<String> vertices = new ArrayList<>();
+	int [][] adjencyMatrix;
+	
+	void addVertex(String label)
+	{
+		this.vertices.add(label);
+		
+	}
+	
+	void createAdjacencyMatrix()
+	{
+		this.adjencyMatrix = new int[vertices.size()][vertices.size()]; 
+	}
+	
+	void addEdge(String from, String to)
+	{
+		int fromIndex = this.vertices.indexOf(from);
+		int toIndex = this.vertices.indexOf(to);
+		
+		this.adjencyMatrix [fromIndex][toIndex] = 1;
+	}
+	
+	boolean isPathExist(String from, String to)
+	{
+		int fromIndex = this.vertices.indexOf(from);
+		int toIndex = this.vertices.indexOf(to);
+		return this.adjencyMatrix [fromIndex][toIndex];
+		
+		
+	}
+}

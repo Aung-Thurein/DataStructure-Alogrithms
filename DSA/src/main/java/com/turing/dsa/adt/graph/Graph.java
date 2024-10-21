@@ -1,6 +1,9 @@
 package com.turing.dsa.adt.graph;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class Graph {
 
@@ -60,14 +63,74 @@ public class Graph {
 		
 		
 	}
+	public ArrayList<String> getVisited()
+	{
+		return this.visited;
+	}
+	
+	public ArrayList<String> filterVisited(ArrayList<String> vertices)
+	{
+		ArrayList<String> result = new ArrayList<>();
+		
+		for(String vertice : vertices)
+		{
+			if(!this.visited.contains(vertice))
+			{
+				result.add(vertice);
+			}
+		}
+		
+		return result;
+	}
 	
 	public ArrayList<String> depthFirstSearch(String from)
 	{
 		ArrayList<String> result = new ArrayList<String>();
-		result.add(from);
-		this.markedVisted(from);
-		result.addAll(this.getUnvisitedReachableVertices(from));
-		return result;
+		if(!this.visited.contains(from))
+		{
+			result.add(from);
+			this.markedVisted(from);
+			ArrayList<String> unvisitedVertices = this.getUnvisitedReachableVertices(from);
+			for(String unvisited : unvisitedVertices)
+			{
+				ArrayList<String> res =filterVisited(depthFirstSearch(unvisited));
+				
+				result.addAll(res);
+			}
+			
+			return result;
+		}
+		else
+		{
+			return result;
+		}
+		
+	}
+	
+	public void dfsIterative(String from)
+	{
+	//	Queue<String> queue = new ArrayDeque<String>();
+		Stack<String> stack = new Stack<>();
+		stack.push(from);
+		
+		while(!stack.isEmpty())
+		{
+			String element = stack.pop();
+			this.markedVisted(element);
+			
+			ArrayList<String> unvisited = this.getUnvisitedReachableVertices(element);
+			
+			for(int i = unvisited.size() - 1 ; i>= 0 ; i-- )
+			{
+				String vertex = unvisited.get(i);
+				if(!this.visited.contains(vertex))
+				{
+					stack.push(vertex);
+				}
+			}
+			
+				
+		}
 	}
 	
 }

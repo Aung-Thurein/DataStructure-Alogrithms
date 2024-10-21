@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestTwoThreeFourTree" project="DSA" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.turing.dsa.adt.two34tree.TestTwoThreeFourTree" time="0.009" displayname="TestTwoThreeFourTree" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.two34tree.TestTwoThreeFourTree]">
+    <testcase name="testInsertBaseCase" classname="com.turing.dsa.adt.two34tree.TestTwoThreeFourTree" time="0.004" displayname="testInsertBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.two34tree.TestTwoThreeFourTree]/[method:testInsertBaseCase()]"/>
+    <testcase name="testInsertBaseCase2" classname="com.turing.dsa.adt.two34tree.TestTwoThreeFourTree" time="0.0" displayname="testInsertBaseCase2()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.two34tree.TestTwoThreeFourTree]/[method:testInsertBaseCase2()]"/>
+    <testcase name="testInsertBaseCase3" classname="com.turing.dsa.adt.two34tree.TestTwoThreeFourTree" time="0.004" displayname="testInsertBaseCase3()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.two34tree.TestTwoThreeFourTree]/[method:testInsertBaseCase3()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,14 @@
+package com.turing.dsa.adt.graph;
+
+import java.util.ArrayList;
+
+public class Graph {
+
+	ArrayList<String> vertices = new ArrayList<>();
+	
+	void addVertex(String label)
+	{
+		this.vertices.add(label);
+		
+	}
+}

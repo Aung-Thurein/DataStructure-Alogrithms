@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;public void splitChild(Node&lt;T&gt; node, Node&lt;T&gt; childOne, Node&lt;T&gt; childTwo)&apos; from &apos;com.turing.dsa.adt.two34tree.Node.SplitWhenNoParent(...)&apos; to &apos;com.turing.dsa.adt.two34tree.Node&apos;&#x0A;- Original project: &apos;DSA&apos;&#x0A;- Method name: &apos;splitChild&apos;&#x0A;- Destination type: &apos;com.turing.dsa.adt.two34tree.Node&apos;&#x0A;- Declared visibility: &apos;public&apos;&#x0A;- Replace occurrences of statements with method" comments="false" description="Extract method &apos;splitChild&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.turing.dsa.adt.two34tree{Node.java" name="splitChild" replace="true" selection="2761 256" stamp="1728796758843" version="1.0" visibility="1"/>
+</session>

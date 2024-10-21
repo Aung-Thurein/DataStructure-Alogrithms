@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GraphTest" project="DSA" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="com.turing.dsa.adt.Graph.GraphTest" time="0.013" displayname="GraphTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]">
+    <testcase name="testBaseCase" classname="com.turing.dsa.adt.Graph.GraphTest" time="0.008" displayname="testBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]/[method:testBaseCase()]"/>
+    <testcase name="testDFSBaseCase" classname="com.turing.dsa.adt.Graph.GraphTest" time="0.004" displayname="testDFSBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]/[method:testDFSBaseCase()]">
+      <error>java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.turing.dsa.adt.Graph.GraphTest.testDFSBaseCase(GraphTest.java:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

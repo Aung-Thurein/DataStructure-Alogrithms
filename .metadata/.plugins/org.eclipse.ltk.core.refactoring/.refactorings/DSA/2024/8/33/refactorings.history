@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.turing.dsa.adt.HashTable.Comparsion&apos; to &apos;Comparison&apos;&#x0A;- Original project: &apos;DSA&apos;&#x0A;- Original element: &apos;com.turing.dsa.adt.HashTable.Comparsion&apos;&#x0A;- Renamed element: &apos;com.turing.dsa.adt.HashTable.Comparison&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Comparsion&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.turing.dsa.adt.HashTable{Comparsion.java[Comparsion" matchStrategy="1" name="Comparison" qualified="false" references="true" similarDeclarations="false" stamp="1723892785834" textual="false" version="1.0"/>
+</session>

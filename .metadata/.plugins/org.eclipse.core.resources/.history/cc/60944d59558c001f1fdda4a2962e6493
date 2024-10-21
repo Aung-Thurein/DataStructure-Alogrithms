@@ -1,0 +1,42 @@
+package com.turing.dsa.adt.heap;
+
+import com.turing.dsa.sorting.Sortable;
+
+public class HeapSort implements Sortable {
+	
+	public void heapify(int[] arr, int n, int index)
+	{
+		int largest = index;
+		int left = 2 * index + 1;
+		int right = 2 * index + 2;
+		
+		if(left < n && arr[index] < arr[left])
+		{
+			largest = left;
+	
+		}
+		if(right < arr[index] < arr[right])
+		{
+			largest = right;
+			
+		}
+		
+		if(largest !=  index)
+		{
+			//swap
+			int temp = arr[index];
+			arr[index] = arr[largest];
+			arr[largest] = temp;
+		}
+	}
+
+	@Override
+	public void sort(int[] arr) {
+
+		for (int i = 0; i < arr.length; i++) {
+			
+		}
+		
+	}
+
+}

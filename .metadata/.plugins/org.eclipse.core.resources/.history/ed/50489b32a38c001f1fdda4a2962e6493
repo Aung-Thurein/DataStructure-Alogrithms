@@ -1,0 +1,5 @@
+package com.turing.dsa.adt.graph;
+
+public class Vertex {
+
+}

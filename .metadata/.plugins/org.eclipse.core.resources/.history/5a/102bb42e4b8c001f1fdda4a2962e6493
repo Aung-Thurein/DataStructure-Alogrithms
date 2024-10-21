@@ -1,0 +1,13 @@
+package com.turing.dsa.adt.heap;
+
+import org.junit.jupiter.api.Test;
+
+public class PriorityQueueWithHeapTest {
+
+	@Test
+	public void testEnqeue()
+	{
+		PriorityQueueWithHeap queue = new PriorityQueueWithHeap();
+	}
+}
+

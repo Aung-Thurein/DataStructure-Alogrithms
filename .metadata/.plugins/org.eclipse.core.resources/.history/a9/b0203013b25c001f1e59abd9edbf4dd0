@@ -1,0 +1,6 @@
+package com.turing.dsa.adt.two34tree;
+
+public class Node<T> {
+	
+	Node<T> parent;
+}

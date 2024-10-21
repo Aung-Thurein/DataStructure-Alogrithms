@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GraphTest" project="DSA" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="com.turing.dsa.adt.Graph.GraphTest" time="0.019" displayname="GraphTest" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]">
+    <testcase name="testBaseCase" classname="com.turing.dsa.adt.Graph.GraphTest" time="0.008" displayname="testBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]/[method:testBaseCase()]"/>
+    <testcase name="testDFSBaseCase" classname="com.turing.dsa.adt.Graph.GraphTest" time="0.011" displayname="testDFSBaseCase()" uniqueid="[engine:junit-jupiter]/[class:com.turing.dsa.adt.Graph.GraphTest]/[method:testDFSBaseCase()]">
+      <failure>
+        <expected>4</expected>
+        <actual>1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;4&gt; but was: &lt;1&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at com.turing.dsa.adt.Graph.GraphTest.testDFSBaseCase(GraphTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

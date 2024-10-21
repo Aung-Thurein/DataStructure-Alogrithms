@@ -1,0 +1,9 @@
+package com.turing.dsa.adt.two34tree;
+
+import java.util.ArrayList;
+
+public class Node<T> {
+	
+	Node<T> parent;
+	ArrayList<T> key;
+}

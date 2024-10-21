@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;public Node&lt;T&gt; splitNodeWithParent(Node&lt;T&gt; node)&apos; from &apos;com.turing.dsa.adt.two34tree.Node.split(...)&apos; to &apos;com.turing.dsa.adt.two34tree.Node&apos;&#x0A;- Original project: &apos;DSA&apos;&#x0A;- Method name: &apos;splitNodeWithParent&apos;&#x0A;- Destination type: &apos;com.turing.dsa.adt.two34tree.Node&apos;&#x0A;- Declared visibility: &apos;public&apos;" comments="false" description="Extract method &apos;splitNodeWithParent&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.turing.dsa.adt.two34tree{Node.java" name="splitNodeWithParent" replace="false" selection="1197 547" stamp="1728228883330" version="1.0" visibility="1"/>
+</session>
